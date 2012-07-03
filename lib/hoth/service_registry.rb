@@ -24,6 +24,14 @@ module Hoth
     def locate_service(service_name) # :nodoc:
       @registry[service_name.to_sym]
     end
+
+    def registry
+      @registry
+    end
+
+    def self.registry
+      instance.registry
+    end
     
     private
       
