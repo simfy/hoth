@@ -1,6 +1,6 @@
 module Hoth
   class Service
-    attr_accessor :name, :params_arity, :module
+    attr_accessor :name, :params_arity, :module, :return_value
     
     def initialize(name, &block)
       @name         = name
